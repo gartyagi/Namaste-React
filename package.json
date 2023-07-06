@@ -1,0 +1,35 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "Path to Success",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "start:prod": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gartyagi/Namaste-React.git"
+  },
+  "author": "Garvit Tyagi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gartyagi/Namaste-React/issues"
+  },
+  "homepage": "https://github.com/gartyagi/Namaste-React#readme",
+  "devDependencies": {
+    "@babel/core": "^7.22.6",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version"
+  ]
+}
