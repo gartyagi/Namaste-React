@@ -1,66 +1,5 @@
-// hot module reloading 
 
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-// const header = (
-//     <h1 id="a" key="header" className="abc">
-//         Header
-//     </h1>
-// );
-
-// const HeaderChildComponent = () => (
-//     <h1 id="aa" key="headerChild" className="abcabc">
-//         HeaderChild
-//     </h1>
-// );
-
-
-
-//React Components
- // Functional Component  ---- NEW
- // Class Componenet------ OLD
-
-
-//  const HeaderComponenet = () => {
-//     return (
-//         <div> 
-//             <h1> 
-//                 Functional  Component 
-//             </h1>
-//             {header}
-//             {HeaderChildComponent2()}
-//             <HeaderChildComponent />
-//             <h2>
-//                 This is h2 tag
-//             </h2>
-//          </div>
-//        );
-//  }
-
-
-//LAYOUT
-/*
-            Header: 
-                Logo
-                NavBar(Right Side)
-                Cart
-            Body:
-                Search Bar
-                RestarauntList:
-                    ResterauntCard:
-                        image
-                        Name
-                        Rating
-                        Cuisines
-            Footer:
-                Links
-                Copyright
-
-        */
-
-
-const Title = () => (
+export const Title = () => (
     <a href="/">
         <img 
             className="logo"
@@ -71,8 +10,7 @@ const Title = () => (
     
 );
 
-
-const Header = () => {
+export const Header = () => {
     return (
        <div className="header">
             <Title />
@@ -86,45 +24,6 @@ const Header = () => {
             </div>
        </div>
     );
-};
+}; 
 
-const Body = () => {
-    return (
-       <div className="body" style={bodyStyle}>
-            <h4>Body</h4>
-       </div>
-    );
-};
-
-const Footer = () => {
-    return (
-       <div className="footer">
-           <h4>Footer</h4>
-       </div>
-    );
-};
-
-const bodyStyle = {
-    backgroundColor: "red"
-}
-// only one valid jsx tag available
-const AppLayout = () => {
-    return  (
-        <>
-            <Header />
-            <Body />
-            <Footer /> 
-        </>
-    )
-};
-
-
-
-
-  // as we are modifying DOM, in react we have to assign root to something
-  const root = ReactDOM.createRoot(document.getElementById("root"));
-//   console.log(header);
-  // passing a react element and render updates the DOM,
-  // note, if we have anything in the "root" div, then react replaces them with the element it is rendering
-//   root.render(header);  
-  root.render(<AppLayout/>);  
+export default Header;
